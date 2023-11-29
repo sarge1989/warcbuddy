@@ -1,0 +1,8 @@
+{
+  "name": "warcbuddy",
+  "framework": "nextjs",
+  "scripts": {
+    "build": "npm run build",
+    "start": "next start"
+  }
+}
