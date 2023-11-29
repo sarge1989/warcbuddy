@@ -28,7 +28,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     
     const content = await extractAndConcatenate(stream);
     const result = await getResult(content);
-    console.log(result)
     res.status(200).json({ result });
   } catch (error) {
     res.status(500).json({ error: (error as Error).message });
