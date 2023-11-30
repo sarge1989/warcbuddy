@@ -60,6 +60,7 @@ async function getResult(extract: string): Promise<object> {
     messages.push({role: 'user', content: example.user});
     messages.push({role: 'assistant', content: example.assistant});
   }
+  messages.push({role: 'system', content: systemPrompt})
   messages.push({role: 'user', content: extract});
   const chatCompletion = await openai.chat.completions.create({
     messages: messages,
