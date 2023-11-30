@@ -1,8 +1,8 @@
 {
   "name": "warcbuddy",
-  "framework": "nextjs",
+  "framework": "nextjs-standalone",
   "scripts": {
     "build": "npm run build",
-    "start": "next start"
+    "start": "node server.js"
   }
 }
